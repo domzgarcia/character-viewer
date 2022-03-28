@@ -1,0 +1,8 @@
+newmtl 0_kn_cape_15
+Ka 1.000 1.000 1.000
+Kd 1.000 1.000 1.000
+Ks 0.000 0.000 0.000
+d 1.0
+illum 2
+map_Ka ../def_t16/51.png
+map_Kd ../def_t16/51.png
