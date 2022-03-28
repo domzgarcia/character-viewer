@@ -14,14 +14,14 @@
     </style>
 </head>
 
-<select name="" id="mickoViewer" onchange="changeMickoArmor()">
+<select name="" id="ArcherViewer" onchange="changeArcherArmor()">
 	<option value="">Select Armor</option>
-	<option value="10">Micko 10</option>
-	<option value="17">Micko 17</option>
-	<option value="16">Micko 16</option>
+	<option value="10">Archer 10</option>
+	<option value="17">Archer 17</option>
+	<option value="16">Archer 16</option>
 </select>
 
-<select name="" id="knightViewer" onchange="changeKnightArmor()">
+<select name="" id="KnightViewer" onchange="changeKnightArmor()">
 	<option value="">Select Armor</option>
 	<option value="17">Knight 17</option>
 	<option value="16">Knight 16</option>
@@ -41,15 +41,15 @@
 
 	var charType = "2_mi";
 
-	function changeMickoArmor(){
-		var e = document.getElementById("mickoViewer");
+	function changeArcherArmor(){
+		var e = document.getElementById("ArcherViewer");
 		var val = e.value;
 		charType = "2_mi";
 		if(val.length) initScene(val);
 	}
 
 	function changeKnightArmor(){
-		var e = document.getElementById("knightViewer");
+		var e = document.getElementById("KnightViewer");
 		var val = e.value;
 		charType = "0_kn";
 		if(val.length) initScene(val);
@@ -92,9 +92,9 @@
 		var modelPath = "./resource/models/def_obj/";
 		var models = [];
 		/*
-		0 - knight
+		0 - Knight
 		1 - 
-		2 - micko
+		2 - Archer
 		*/ 
 		
 		var armorSet = +val;
